@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>HttpAuthModule</id>
+    <version>$version$</version>
+    <title>Http Auth Module</title>
+    <authors>nabehiro</authors>
+    <owners>nabehiro</owners>
+    <!-- <licenseUrl></licenseUrl> -->
+    <projectUrl>http://github.com/nabehiro/HttpAuthModule</projectUrl>
+    <!-- <iconUrl></iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Simple Http Basic, Digest Authentication Module with IP Restriction.</summary>
+    <description>
+      Simple Http Basic, Digest Authentication Module with IP Restriction.
+      [Features]
+      - Standard basic authentication.
+      - Digest authentication implementation is simple algorithm: nonce value has expiration.
+      - Basic or Digest Authentication don't touch HttpContext.Current.User.
+      - Target IP Address Family is IPv4 and IPv6.
+      - Ignore Path Regex.(specified path skip authentication)
+      - Ignore IP Address.(specified IP skip authentication)
+
+      If you find bugs or have requests for improvement, contact me. http://github.com/nabehiro/HttpAuthModule
+    </description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>Http Authentication Basic Digest Restrict IP Sitecore</tags>
+  </metadata>
+  <files>
+    <file src="Web.Config.install.xdt" target="content"/>
+    <file src="Web.Config.uninstall.xdt" target="content"/>
+  </files>
+</package>
